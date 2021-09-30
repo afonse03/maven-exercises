@@ -31,9 +31,10 @@ public class MyFirstTest {
     @Test
     public void verifyStatements() {
         String language = "PHP";
-        language.contains("H"); // use assertTrue for this statement
-        language.contains("J"); // use assertFalse for this statement
-        assertFalse(language);
+        System.out.println(language.contains("H"));
+        System.out.println(language.contains("J"));
+//        assertFalse(language.contains("J"));
+//        assertTrue(language.contains("H"));
     }
 
 }
