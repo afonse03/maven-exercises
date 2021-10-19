@@ -6,11 +6,13 @@ import static org.junit.Assert.*;
 
 public class MyFirstTest {
 
+    // todo: create a test method that uses assertEquals or assertNotEquals to verify if the String Codeup is the same as Codeup
     @Test
     public void codeupTest() {
         assertEquals("Codeup","Codeup");
     }
 
+    // todo: create a test method that uses assertNotSame to verify that the ArrayLists are not the same
     @Test
     public void listVerify() {
         List<String> languages = new ArrayList<>();
@@ -18,6 +20,7 @@ public class MyFirstTest {
         assertNotSame(languages,moreLanguages);
     }
 
+    // todo: create a test method that uses assertArrayEquals to verify the arrays are equal
     @Test
     public void verifyArrays() {
         int[] numbers = {1, 2, 3};
@@ -28,6 +31,7 @@ public class MyFirstTest {
         assertArrayEquals(numbers,otherNumbers);
     }
 
+    // todo: create a test method that uses both assertFalse and assertTrue to verify the statements
     @Test
     public void verifyStatements() {
         String language = "PHP";
@@ -36,5 +40,4 @@ public class MyFirstTest {
 //        assertFalse(language.contains("J"));
 //        assertTrue(language.contains("H"));
     }
-
 }
